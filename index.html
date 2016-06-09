@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JS OOP Practice Page</title>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+	<h1 id="heading">Sign In Here</h1>
+	<form onsubmit="return validateForm()">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username">
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email">
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password">
+		<input type="submit" value="Submit">
+	</form>
+	<!--the order of adding scripts matters! The scripts below can reference functions/variables from scripts above them!-->
+	<script src="script.js"></script>
+	<!--because script.js is listed BELOW the jQuery reference, the script.js file can successfully reference functions/vars in the jQuery library on this site!-->
+</body>
+</html>
