@@ -68,24 +68,24 @@ Album.addPhoto(new Photo("p2.jpg", "root/Desktop"));
 console.log(Album.getPhoto(2));
 console.log(Album.listPhotos());
 
-function Teacher(classname){
-	this.classname = classname;
+function Teacher(){
+	this.teaches = true;
 	Person.apply(this, arguments);
 }
 
 Teacher.prototype = new Person();
 
-var t1 = new Teacher("Image Processing", "Dr. Phillips", 71, 55, 90);
+var t1 = new Teacher("Dr. Phillips", 71, 55, 90);
 console.log(list_all(t1));
 
-function Student(friends){
-	this.friends = friends;
+function Student(){
+	this.hasFriends = true;
 	Person.apply(this, arguments);
 }
 
 Student.prototype = new Person();
 
-var s1 = new Student("Leester, Radesh, Stacy", "Ryan Ramphal", 22, 76, 220);
+var s1 = new Student("Ryan Ramphal", 22, 76, 220);
 console.log(list_all(s1));
 
 function School(){
